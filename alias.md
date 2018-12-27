@@ -9,3 +9,6 @@ $ source ~/.bashrc
 ```
 * remove alias ```$ unalias alias_name```</br>
 * remove all alias ```$ unalias -a [remove all alias]```
+
+* For setting autocompletion for alias(here kc is the alias), run below command post setting alias:</br>
+```echo "source <(kubectl completion bash|sed s/kubectl/kc/g)">>.bashrc```
