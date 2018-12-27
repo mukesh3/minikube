@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: ReplicaSet
+metadate:
+    name: demo-replicaset
+    labels:
+        version: 0.1
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            project: demo-replicaset
+            role: frontend
+    template:
+        metadate:
+            labels:
+                project: demo-replicaset
+                role: frontend
+                env:qa
+        spec:
+            containers:
+            -   name: demo-replicaset
+                image: apache:latest
