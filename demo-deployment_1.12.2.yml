@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      run: demo-nginx
+  template:
+    metadata:
+      labels:
+        run: demo-nginx
+    spec:
+      containers:
+      - name: demo-nginx
+        image: nginx:1.12.2
+        ports:
+        - containerPort: 80
