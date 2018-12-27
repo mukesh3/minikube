@@ -1,6 +1,7 @@
-Working with deployments
-Run below command to create deployment </br>
-```# kubectl create -f demo-deployment.yml --save-config --record
+#Working with deployments and replicaset
+```
+Run below command to create deployment 
+# kubectl create -f demo-deployment.yml --save-config --record
 # kc get rs -o wide
 NAME                    DESIRED   CURRENT   READY     AGE       CONTAINERS   IMAGES         SELECTOR
 demo-nginx-5b8668b4c6   3         3         3         30s       demo-nginx   nginx:1.11.0   pod-template-hash=5b8668b4c6,run=demo-nginx
