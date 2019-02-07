@@ -81,9 +81,9 @@ It worked in centos 7 with below docker and minikube:
 [root@minik8s ~]# docker --version
 Docker version 18.03.0-ce, build 0520e24
 [root@minik8s ~]# minikube version
-```
 minikube version: v0.30.0
-*	install kubectl as well</br>
+```
+*Install kubectl as well</br>
 ```
 $ curl -Lo kubectl https://storage.googleapis.com/kubernetes-release/release/v1.8.0/bin/linux/amd64/kubectl && chmod +x kubectl && sudo mv kubectl /usr/local/bin/
 ```
