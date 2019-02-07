@@ -6,7 +6,7 @@
 *	Add repo referring https://docs.docker.com/install/linux/docker-ce/centos/#install-using-the-repository </br>
 *	There will be selinux dependency issue: check https://github.com/geerlingguy/ansible-role-docker/issues/56 and enable extra repos for the OS( centos or rehl)</br>
 *	After adding repo, docker can be installed with yum command</br>
-3. Install Minikube:</br>
+3. Install Minikube: https://github.com/kubernetes/minikube/releases</br>
 *	Command:</br>
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/	</br>
 *	minikube version</br>
